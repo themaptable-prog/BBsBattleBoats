@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "1.52",
+  "defaultTheme": "deep-sea",
+  "defaults": {
+    "board": "standard",
+    "fleet": 0,
+    "players": 2,
+    "mode": "standard",
+    "autoRandomizeTurn": true,
+    "lockScoreboard": false,
+    "escalatingRounds": true,
+    "startingItems": "none"
+  },
+  "missions": [
+    {"id":"intercept","name":"Channel Intercept","tone":"orange","summary":"Fast duel in close quarters.","board":"quick","fleet":0,"players":2,"mode":"standard","startingItems":"none"},
+    {"id":"crossfire","name":"Three-Way Crossfire","tone":"teal","summary":"Tactical items and movement for three fleets.","board":"standard","fleet":1,"players":3,"mode":"advanced","startingItems":"patrol"},
+    {"id":"nightwatch","name":"Night Watch","tone":"purple","summary":"Four fleets with limited attack reports.","board":"long","fleet":2,"players":4,"mode":"fog","startingItems":"none"}
+  ],
+  "startingItemPresets": [
+    {"id":"none","name":"Empty lockers","items":{},"supplies":{"every":0,"rounds":[],"mode":"same","type":"radar","quantity":1}},
+    {"id":"patrol","name":"Patrol kit","items":{"radar":1,"scout":1,"move":1},"supplies":{"every":3,"rounds":[],"mode":"random","type":"radar","quantity":1}},
+    {"id":"defence","name":"Defence kit","items":{"shield":2,"redirect":1,"jammer":1},"supplies":{"every":4,"rounds":[],"mode":"same","type":"shield","quantity":1}},
+    {"id":"choice","name":"Supply drops","items":{},"supplies":{"every":0,"rounds":[2,5,8],"mode":"choose","type":"radar","quantity":2}},
+    {"id":"shared","name":"Shared arsenal","items":{"radar":1,"torpedo":1,"mines":1},"supplies":{"every":3,"rounds":[],"mode":"shared","type":"radar","quantity":1}}
+  ]
+}
